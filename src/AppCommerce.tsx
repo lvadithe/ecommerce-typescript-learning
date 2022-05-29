@@ -1,8 +1,13 @@
+import Navigation from "./components/Principal/Navigation/Navigation";
+import {
+  BrowserRouter
+} from "react-router-dom";
+
 const AppCommerce = () => {
   return (
-    <div className="App">
-      <span>Bienvenido</span>
-    </div>
+    <BrowserRouter>
+      <Navigation />
+    </BrowserRouter>
   );
 }
 
