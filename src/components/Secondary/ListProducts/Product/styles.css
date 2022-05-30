@@ -1,0 +1,16 @@
+.card_container {
+    width: 15rem;
+    margin: 5px;
+}
+
+.card_img {
+    height: 210px !important;
+}
+
+.card_title {
+    font-size: 15px !important;
+}
+
+.card_description {
+    font-size: 15px !important;
+}

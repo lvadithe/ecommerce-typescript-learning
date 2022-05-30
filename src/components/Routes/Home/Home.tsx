@@ -3,7 +3,7 @@ import './styles.css';
 
 export const Home = () => {
     return (
-        <div className='container mt-3 home'>
+        <div className='home'>
             <ListProducts />
         </div>
     )
