@@ -3,6 +3,8 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import { Home } from "../../Routes/Home/Home";
+import { Checkout } from "../../Routes/Checkout/Checkout";
 
 
 const Navigation = () => {
@@ -10,8 +12,8 @@ const Navigation = () => {
     <>
       <NavBar />
       <Routes>
-        <Route path="/" element={<h1>Home</h1>} />
-        <Route path="about" element={<h1>Checkou</h1>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/checkout" element={<Checkout/>} />
       </Routes>
     </>
   );
