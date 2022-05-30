@@ -6,14 +6,17 @@ import {
 import { Home } from "../../Routes/Home/Home";
 import { Checkout } from "../../Routes/Checkout/Checkout";
 
+type Props = {
+  handleOpen: (state: number) => void
+}
 
-const Navigation = () => {
+const Navigation = ({handleOpen}: Props) => {
   return (
     <>
-      <NavBar />
+      <NavBar handleOpen={handleOpen}/>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/checkout" element={<Checkout/>} />
+        <Route path="/checkout" element={<Checkout />} />
       </Routes>
     </>
   );
